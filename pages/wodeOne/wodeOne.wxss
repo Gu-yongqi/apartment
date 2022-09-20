@@ -1,0 +1,31 @@
+/* pages/wodeOne/wodeOne.wxss */
+.wodeOne{
+  padding: 40rpx 40rpx 80rpx 40rpx;
+}
+.wodeOneHeaderTitle{
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 700;
+  margin-bottom: 40rpx;
+  letter-spacing: 5rpx;
+}
+.wodeOneMain{
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+.wodeOneMainWeight{
+  font-weight: 700;
+}
+.wodeOneFooter view{
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+  line-height: 50rpx;
+}
+.wodeOneFooter .wodeOneTitle{
+  margin: 32rpx 0;
+  font-weight: 700;
+}
+.wodeOneFooter .wodeOneTextWeight{
+  font-weight: 700;
+  line-height: 50rpx;
+}

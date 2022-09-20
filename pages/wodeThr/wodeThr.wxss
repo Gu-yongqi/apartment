@@ -1,0 +1,17 @@
+/* pages/wodeThr/wodeThr.wxss */
+.wodeThr{
+  padding: 40rpx 40rpx 80rpx 40rpx;
+}
+.wodeThrTextWeight {
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+  text-indent: 2em;
+}
+ .wodeThrText{
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+  line-height: 50rpx;
+  text-indent: 2em;
+}

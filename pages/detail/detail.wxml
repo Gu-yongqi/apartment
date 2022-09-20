@@ -1,0 +1,62 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{list.banner}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width: 100%;"/>
+      </swiper-item>
+    </block>
+  </swiper>
+ <view class="one">
+  <view class="title">{{list.dizhi}}</view>
+  <view class="zujin">{{list.zujin}}元/月</view>
+    <van-tag type="primary">智能锁</van-tag>
+    <van-tag type="success">临地铁</van-tag>
+    <van-tag type="danger">房租月付</van-tag>
+    <van-tag type="warning">WIFI</van-tag>
+    <van-tag type="primary">独卫</van-tag>
+    <van-tag type="success">外阳台</van-tag>
+    <van-tag type="danger">飘窗</van-tag>
+    <van-tag type="warning">热水</van-tag>
+ </view>
+ <van-cell-group>
+  <van-cell  icon="/image/indexFiv.png" title="房屋信息"   title-class="CellTitle"/>
+</van-cell-group>
+<view class="two">
+  <view><text>物业地址：</text><text class="weight">{{list.dizhi}}</text></view>
+  <view class="flex">
+    <view><text>房屋户型：</text><text class="weight">2室1厅</text></view>
+    <view><text>房屋朝向：</text><text class="weight">{{list.chaoxiang}}</text></view>
+    <view><text>房屋面积：</text><text class="weight">{{list.mianji}}m²</text></view>
+    <view><text>所属楼层：</text><text class="weight">第{{list.louceng}}层/共{{list.lougao}}层</text></view>
+  </view>
+</view>
+<van-cell-group>
+  <van-cell  icon="/image/indexFiv.png" title="房屋标配"   title-class="CellTitle"/>
+</van-cell-group>
+<view class="thr">
+<view wx:for="{{image}}" wx:key="index" class="img">
+  <view>
+    <image src="{{item.icon}}"></image>
+  </view>
+  <view>{{item.name}}</view>
+</view>
+</view> 
+<van-cell-group>
+  <van-cell  icon="/image/indexFiv.png" title="备注说明"   title-class="CellTitle"/>
+</van-cell-group>
+<view class="for">
+  房间亮点：1.智能门锁，提升出入安全性，方便后期管理2.豪华家具，家电齐全，独立厨卫，切合用户核心需求3.洗衣机烘洗一体，加配50寸彩电，营造居家氛围4.厨房、餐厅、客厅区域分离，提升使用感5.卫生间干湿分离，使用更方便。
+</view>
+<view class="btn">
+ <view class="yuyue" bindtap="yuyue">
+  <van-icon name="underway-o" />
+  <text>预约看房</text>
+ </view>
+ <view class="lianxi" bindtap="calling">
+  <van-icon name="phone-o" />
+  <text>联系我们</text>
+ </view>
+</view>
+<van-toast id="van-toast" />
+</view>

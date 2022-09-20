@@ -1,0 +1,22 @@
+/* pages/wodeTwo/wodeTwo.wxss */
+.wodeTwo{
+  padding: 40rpx 40rpx 80rpx 40rpx;
+}
+.wodeTwoNav{
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 80rpx;
+}
+.wodeTwoFooter view{
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+  line-height: 50rpx;
+}
+.wodeTwoFooter .wodeTwoTitle{
+  margin: 32rpx 0;
+  font-weight: 700;
+}
+.wodeTwoFooter .wodeTwoTextWeight{
+  font-weight: 700;
+  line-height: 50rpx;
+}

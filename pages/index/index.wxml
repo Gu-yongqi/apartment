@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="index">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 240px;">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item.img}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="search">
+    <van-search left-icon="/image/sousuo.png" model:value="{{ value }}" bind:search="search" placeholder="请输入您想住的区域、商圈或小区名字" />
+  </view>
+  <van-grid square border="{{false}}">
+    <van-grid-item icon="/image/indexOne.png" text="整租房源" bind:click="listingTrue" />
+    <van-grid-item icon="/image/indexTwo.png" text="合租房源" bind:click="listingFalse" />
+    <van-grid-item icon="/image/indexThr.png" text="短期租聘" bind:click="listing" />
+    <van-grid-item icon="/image/indexFor.png" text="地图找房" bind:click="map" />
+  </van-grid>
+  <van-cell-group>
+    <van-cell icon="/image/indexFiv.png" title="今日特惠" value="更多" is-link title-class="indexCellTitle" value-class="indexCellValue" bind:click="listing" />
+  </van-cell-group>
+  <view class="text">
+    暂无优惠房源，敬请期待...
+  </view>
+  <van-cell-group>
+    <van-cell icon="/image/indexFiv.png" title="好房推荐" value="更多" is-link title-class="indexCellTitle" value-class="indexCellValue" bind:click="listingTrue" />
+  </van-cell-group>
+  <view wx:for="{{list}}" wx:key="_id" class="indexList" bindtap="detail" data-bianhao="{{item.bianhao}}">
+    <image src="{{item.picture}}" style="width:100%;"></image>
+    <view class="rotate">{{houseType==0?'合租':'整租'}}</view>
+    <view class="box">
+      <view class="left">
+        <view>{{item.biaoti}}</view>
+        <view>
+          <van-tag type="primary">智能锁</van-tag>
+          <van-tag type="success">临地铁</van-tag>
+          <van-tag type="danger">房租月付</van-tag>
+          <van-tag type="warning">WIFI</van-tag>
+        </view>
+      </view>
+      <view class="right">{{item.zujin}}<text>元/月</text></view>
+    </view>
+  </view>
+  <view wx:if="{{!active}}" style="text-align: center; margin-top:38rpx">
+    <van-loading size="24px" vertical>加载中...</van-loading>
+  </view>
+  <view wx:else="{{active}}">
+    <view wx:if="{{count>=limit}}" style="text-align: center; margin-top:38rpx">
+      <van-loading size="24px" vertical>加载中...</van-loading>
+    </view>
+    <view class="indexFotterText" wx:else="{{count<limit}}">-没有更多内容了-</view>
+  </view>
+  <van-toast id="van-toast" />
+</view>

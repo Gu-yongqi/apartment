@@ -1,0 +1,19 @@
+<!--pages/booking/booking.wxml-->
+<view class="booking">
+  <van-cell-group>
+    <van-field model:value="{{ name }}" required clearable label="姓名" placeholder="请输入您的姓名" />
+    <view class="radio">
+      <text class="icon">*</text>
+      <text class="text">性别</text>
+      <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal" style="display: inline-block;">
+        <van-radio name="1" checked-color="#2c90a5" class="radioOne">先生</van-radio>
+        <van-radio name="2" checked-color="#2c90a5">女士</van-radio>
+      </van-radio-group>
+    </view>
+    <van-field model:value="{{ day }}" required clearable label="看房时间" placeholder="请输入年月日" />
+    <van-field  model:value="{{ number }}" required clearable label="手机号码" placeholder="请输入您的手机号码" />
+    <van-field model:value="{{ text }}" label="预约留言" type="textarea" placeholder="请输入您的留言" autosize border="{{ false }}" />
+  </van-cell-group>
+  <view class="btn" bindtap="btn">预约</view>
+  <van-toast id="van-toast" />
+</view>

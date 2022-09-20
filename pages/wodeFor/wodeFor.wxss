@@ -1,0 +1,24 @@
+/* pages/wodeFor/wodeFor.wxss */
+.wodeFor{
+  padding: 40rpx 40rpx 80rpx 40rpx;
+}
+.wodeForHeaderTitle{
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 700;
+  margin-bottom: 40rpx;
+  letter-spacing: 5rpx;
+}
+.wodeForFooter view{
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+  line-height: 50rpx;
+}
+.wodeForFooter .wodeForTitle{
+  margin: 32rpx 0;
+  font-weight: 700;
+}
+.wodeForFooter .wodeForTextWeight{
+  font-weight: 700;
+  line-height: 50rpx;
+}

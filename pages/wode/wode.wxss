@@ -1,0 +1,138 @@
+/* pages/wode/wode.wxss */
+.wodeTitle {
+  font-size: 46rpx;
+  font-weight: 700;
+  /* 文字之间的间距 */
+  letter-spacing: 8rpx;
+  text-align: center;
+  margin-top: 80rpx;
+}
+
+.wodeIcon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.wodeLeft {
+  text-align: center;
+}
+
+.wodeRight {
+  text-align: center;
+}
+
+.wodeImg {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.wodeIconText {
+  font-size: 28rpx;
+  color: #6f7884;
+}
+
+.wodeBanner {
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.wodeLogin {
+  width: 375rpx;
+  background-color: #e54a11;
+  color: #fff;
+  letter-spacing: 8rpx;
+  font-weight: normal;
+}
+
+.wodeFooter {
+  margin: 100rpx 40rpx 0 40rpx;
+}
+
+.wodeChekbox {
+  font-size: 24rpx;
+  color: #6f7884;
+}
+
+/* 未选中时--样式更改 */
+.wodeChekbox .wx-checkbox-input {
+  width: 24rpx;
+  /* 背景的宽 */
+  height: 24rpx;
+  /* 背景的高 */
+  border: 1rpx solid #6f7884;
+  /* 边框颜色*/
+}
+
+/* 选中后的--样式更改 */
+.wodeChekbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: 1rpx solid #e54a11;
+  background: #e54a11;
+  /*背景色橙红色*/
+}
+
+/* 选中后的--对勾的样式更改 （可根据自己需求修改） */
+.wodeChekbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 24rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 24rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 24rpx;
+  text-align: center;
+  /* 文字居中显示*/
+  font-size: 24rpx;
+  /* 对勾大小 30rpx */
+  color: #fff;
+  /* 对勾颜色 白色 */
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.wodeText {
+  font-size: 24rpx;
+  color: #e54a11;
+}
+
+.van-empty {
+  text-align: center;
+}
+
+.van-empty image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.van-empty__image {
+  height: 160rpx !important;
+}
+
+.van-empty__description {
+  font-size: 24rpx !important;
+}
+
+.wodeOnLogin {
+  position: fixed;
+  bottom: 120rpx;
+  right: 32rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #ed4e4e;
+}
+
+.wodeOnLogin .van-icon {
+  position: absolute;
+  top: 18rpx;
+  left: 36rpx;
+}
+
+.wodeOnLogin .wodeOnText {
+  position: absolute;
+  top: 38rpx;
+  left: 22rpx;
+  font-size: 24rpx;
+  color: #fff;
+  letter-spacing: 8rpx;
+}

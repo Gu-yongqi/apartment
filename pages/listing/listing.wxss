@@ -1,0 +1,78 @@
+/* pages/listing/listing.wxss */
+.listing input {
+  font-size: 24rpx;
+}
+
+.listing .btn {
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+  width: 120rpx;
+  background-color: #2c90a5;
+}
+
+.listing .const {
+  display: flex;
+  justify-content: space-between;
+  padding: 32rpx;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.listing .const .left {
+  margin-right: 10rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.listing .const .left image {
+  width: 200rpx;
+  height: 260rpx;
+}
+
+.listing .const .rotate {
+  position: absolute;
+  top: 20rpx;
+  left: -60rpx !important;
+  text-align: center;
+  transform: rotate(-45deg);
+  width: 240rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: #2f99af;
+  color: #fff;
+  font-size: 28rpx;
+  letter-spacing: 8rpx;
+}
+
+.listing .const .right {
+  line-height: 50rpx;
+}
+
+.listing .const .right .title {
+  font-weight: 700;
+  font-size: 32rpx;
+}
+
+.listing .const .right .one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listing .const .right .rightOne {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.listing .const .right .rightTwo {
+  font-size: 38rpx;
+  color: red;
+}
+
+.listing .const .right .text {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.listing .const .right .van-tag {
+  margin-right: 8rpx;
+}

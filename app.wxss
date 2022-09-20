@@ -1,0 +1,9 @@
+/**app.wxss**/
+.indexFotterText {
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #f6f6f6;
+  font-size: 28rpx;
+  letter-spacing: 8rpx;
+}

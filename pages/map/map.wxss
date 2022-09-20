@@ -1,0 +1,13 @@
+/* pages/map/map.wxss */
+.map .icon{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 150rpx;
+  left: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

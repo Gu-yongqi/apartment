@@ -1,0 +1,107 @@
+/* pages/detail/detail.wxss */
+.detail .one {
+  box-sizing: border-box;
+  width: 750rpx;
+  padding: 32rpx;
+  line-height: 54rpx;
+}
+
+.detail .one .title {
+  font-size: 38rpx;
+  font-weight: 700;
+}
+
+.detail .one .zujin {
+  font-size: 24rpx;
+  color: red;
+}
+
+.detail .one .van-tag {
+  font-size: 20rpx;
+  margin-right: 8rpx;
+}
+
+.detail .CellTitle {
+  font-weight: 700;
+}
+
+.detail .two {
+  box-sizing: border-box;
+  width: 750rpx;
+  padding: 32rpx;
+  line-height: 54rpx;
+}
+
+.detail .two view {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.detail .two .weight {
+  font-weight: 700;
+  color: #333333;
+}
+
+.detail .two .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detail .two .flex view {
+  width: 50%;
+}
+
+.detail .thr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32rpx 0;
+}
+
+.detail .thr .img{
+  width: 25%;
+  margin-bottom: 38rpx;
+}
+
+.detail .thr .img image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.detail .thr .img view{
+  text-align: center;
+  font-size: 24rpx;
+}
+.detail .for {
+  box-sizing: border-box;
+  width: 750rpx;
+  padding: 32rpx 32rpx 120rpx 32rpx;
+  line-height: 48rpx;
+  font-size: 24rpx;
+}
+.detail .btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.detail .btn view{
+  width: 50%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.detail .btn .yuyue{
+  background-color: #fff;
+}
+.detail .btn .lianxi{
+  color: #fff;
+  background-color: #2c90a5;
+}
+.detail .btn  text{
+  padding-left: 20rpx;
+}
